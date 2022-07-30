@@ -38,7 +38,9 @@ function login() {
 
 function logout() {
   window.open("index.html")
-}
+  alert("Succesfully logged out ")
+} 
+
 
 
 
