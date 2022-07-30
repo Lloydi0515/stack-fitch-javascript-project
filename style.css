@@ -1,0 +1,62 @@
+
+
+.bg-primary {
+    /* background: linear-gradient(175deg, rgba(42,35,130,1) 12%, rgba(102,76,177,1) 68%, rgba(168,114,208,1) 96%); */
+    /* background: linear-gradient(123deg, rgba(226,220,220,1) 12%, rgba(234,228,228,1) 51%, rgba(233,227,227,1) 96%); */
+    background-image: url(img/banner1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100vh;
+    margin-bottom: 0px;
+}
+.container {
+    margin-top: 300px;
+}
+h1 {
+    color: #282380;
+}
+.lead {
+    color: #282380;
+}
+.custom-shape-divider-bottom-1658932138 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1658932138 svg {
+    position: relative;
+    display: block;
+    width: calc(142% + 1.3px);
+    height: 94px;
+}
+
+.custom-shape-divider-bottom-1658932138 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For tablet devices **/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-bottom-1658932138 svg {
+        width: calc(140% + 1.3px);
+        height: 80px;
+    }
+    .news-input {
+        width: 50%;
+    }
+   
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1658932138 svg {
+        width: calc(150% + 1.3px);
+        height: 46px;
+    }
+}

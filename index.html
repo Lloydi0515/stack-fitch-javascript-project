@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitch Web Project</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="main.js" defer></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+
+</head>
+<body>
+
+    <!-- Nav Bar Section -->
+
+    <nav class="navbar navbar-expand-lg navbar-light mx-auto fixed-top">
+        <div class="container-fluid">
+          <img src="img/logo-4.png" class="rounded float-start" style="width: 100px"alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mx-auto">
+                    <li class="nav-item px-4">
+                        <a class="nav-link active fs-2 text-warning" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link active fs-2 text-warning " aria-current="page" href="health.html">Healthy Living</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link active fs-2 text-warning " aria-current="page" href="earn.html">Earn</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-warning m-3"><a href="login.html"style="text-decoration: none">Login</a></button>
+                <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
+          </div>
+        </div>
+    </nav>
+
+      <!-- banner section -->
+
+    <section class="bg-primary text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div >
+                    <h1>Sleep<span class="text-warning">Earn</span></h1>
+                    <p class="lead fs-4 fw-bold">
+                        An App Help You To Earn 
+                    </p>
+                    <button class="btn btn-warning text-light btn btn-secondary btn-lg"><a href="login.html"style="text-decoration: none">Click Me</a></button>
+                </div>
+                <!-- <img class="image-fluid w-50 d-none d-sm-block rounded float-end" src="img/img2.jpg" alt=""> -->
+                <div class="custom-shape-divider-bottom-1658932138">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+      <!-- Frequently Ask Question bootstrap Accordion -->
+    
+    <section id="questions" class="m-5" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="2000">
+            <h2 class="text-center mb-4 text-primary">About The App</h2>
+            <div class="accordion accordion-flush" id="questions">
+                        <!-- Item 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one" aria-expanded="false">
+                        What is SleepEarn?
+                    </button>
+                    </h2>
+                    <div id="question-one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quia nihil dignissimos? Odio velit quisquam soluta cumque rem facere! Consequuntur maiores dolores saepe consequatur quidem natus ut nam voluptas illo.</div>
+                    </div>
+            </div>
+                <!-- Item 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two" aria-expanded="false">
+                        How It Works?
+                    </button>
+                    </h2>
+                    <div id="question-two" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quia nihil dignissimos? Odio velit quisquam soluta cumque rem facere! Consequuntur maiores dolores saepe consequatur quidem natus ut nam voluptas illo.</div>
+                    </div>
+            </div>
+            <!-- Item 3 -->
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three" aria-expanded="false">
+                    What Will I Earn?
+                    </button>
+                </h2>
+                <div id="question-three" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quia nihil dignissimos? Odio velit quisquam soluta cumque rem facere! Consequuntur maiores dolores saepe consequatur quidem natus ut nam voluptas illo.</div>
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four" aria-expanded="false">
+                    Is There a Payment?
+                    </button>
+                </h2>
+                <div id="question-four" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quia nihil dignissimos? Odio velit quisquam soluta cumque rem facere! Consequuntur maiores dolores saepe consequatur quidem natus ut nam voluptas illo.</div>
+                </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five" aria-expanded="false">
+                    What Are The Requirements?
+                    </button>
+                </h2>
+                <div id="question-five" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quia nihil dignissimos? Odio velit quisquam soluta cumque rem facere! Consequuntur maiores dolores saepe consequatur quidem natus ut nam voluptas illo.</div>
+                </div>
+            </div>
+    </section>
+
+     <!-- Customer's feedback bootstrap card-->
+
+     <section id="instructors" class="p-5">
+        <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="2000">
+            <h2 class="text-center text-primary" id="people">What People Say</h2>
+            <p class="lead text-center text-success mb-5">
+                Our loyal users for more than ++ years in using the SleepEarn
+            </p>
+            <div class="row g-4">
+                <div data-aos="fade-up"
+                data-aos-duration="3000" class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/7.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">John Lee</h3>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia voluptate earum sit voluptas, aliquid veritatis.</p>
+                            <a href="#"><i class=" bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class=" bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class=" bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"><i class=" bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-down"
+                data-aos-duration="3000" class="col-md-6 col-lg-3">
+                  <div class="card bg-light">
+                      <div class="card-body text-center">
+                          <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3" alt="">
+                          <h3 class="card-title mb-3">Jane Love</h3>
+                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia voluptate earum sit voluptas, aliquid veritatis.</p>
+                          <a href="#"><i class=" bi bi-twitter text-dark mx-1"></i></a>
+                          <a href="#"><i class=" bi bi-facebook text-dark mx-1"></i></a>
+                          <a href="#"><i class=" bi bi-linkedin text-dark mx-1"></i></a>
+                          <a href="#"><i class=" bi bi-instagram text-dark mx-1"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div data-aos="fade-up"
+              data-aos-duration="3000" class="col-md-6 col-lg-3">
+                  <div class="card bg-light">
+                      <div class="card-body text-center">
+                          <img src="https://randomuser.me/api/portraits/men/10.jpg" class="rounded-circle mb-3" alt="">
+                          <h3 class="card-title mb-3">Rik Smith</h3>
+                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia voluptate earum sit voluptas, aliquid veritatis.</p>
+                          <a href="#"><i class=" bi bi-twitter text-dark mx-1"></i></a>
+                          <a href="#"><i class=" bi bi-facebook text-dark mx-1"></i></a>
+                          <a href="#"><i class=" bi bi-linkedin text-dark mx-1"></i></a>
+                          <a href="#"><i class=" bi bi-instagram text-dark mx-1"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div data-aos="fade-down"
+              data-aos-duration="3000" class="col-md-6 col-lg-3">
+                  <div class="card bg-light">
+                      <div class="card-body text-center">
+                          <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3" alt="">
+                          <h3 class="card-title mb-3">Joan Hart</h3>
+                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia voluptate earum sit voluptas, aliquid veritatis.</p>
+                          <a href="#"><i class=" bi bi-twitter text-dark mx-1"></i></a>
+                          <a href="#"><i class=" bi bi-facebook text-dark mx-1"></i></a>
+                          <a href="#"><i class=" bi bi-linkedin text-dark mx-1"></i></a>
+                          <a href="#"><i class=" bi bi-instagram text-dark mx-1"></i></a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    
+  <!-- Newsletter Bootstrap input group-->
+
+    <section class="bg-warning text-light p-5 text-m-center text-sm-start text text-center">
+        <div class="container-fluid">
+            <div class="d-sm-flex justify-content-between align-items-center">
+                <h3 class="mb-1 mb-md-0 mx-5 ">Newsletter</h3>
+                <div class="input-group news-input">
+                <input type="text" class="form-control" placeholder="Enter Email">
+                <button class="btn btn-primary btn-lg" type="button">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+  <!-- Footer -->
+
+  <footer data-aos="fade-up"
+  data-aos-anchor-placement="top-bottom"class="p-4 bg-warning text-white text-center position-relative">
+      <div>
+          <p class="lead text-primary">Copyright &copy; 2022 Lloydi StackTrek Web Dev
+              | Follow Me: 
+              <a href="https://www.facebook.com/" target="blank"><i class="bi bi-facebook p-1 text-primary"></i></a>
+              <a href="https://www.instgram.com/" target="blank"><i class="bi bi-instagram p-1 text-primary"></i></a>
+              <a href="https://www.twitter.com/" target="blank"><i class="bi bi-twitter p-1 text-primary"></i></a>
+              <a href="https://www.linkedin.com/" target="blank"><i class="bi bi-linkedin p-1 text-primary"></i></a>
+          </p>
+          <a href="#" class="position-absolute bottom-0 end-0 p-4">
+              <i class="bi bi-arrow-up-circle h2"></i>
+          </a>
+      </div>
+  </footer>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+</html>
