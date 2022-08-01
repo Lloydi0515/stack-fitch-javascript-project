@@ -16,14 +16,7 @@
     width: 40%;
     align-items: center;
 }
-.videos {
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: space-between;
-}
+
 .blogs {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
