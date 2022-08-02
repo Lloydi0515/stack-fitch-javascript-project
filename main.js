@@ -1,4 +1,5 @@
-// userInfo
+// userInfo - login details
+
 const userInfo = [
     {
         username: "lloyd",
@@ -42,24 +43,9 @@ function logout() {
 } 
 
 
-// const button = document.getElementById("convert")
-// const box = document.getElementById("box")
-
-// function adder(number1, number2) {
-//     return parseInt(number1 + number2)
-// }
 
 
-// button.onclick = () => {
-//     const display = document.getElementById("display")
-//     const timeAdder1 = document.getElementById("number1")
-//     const timeAdder2 = document.getElementById("number2")
-//     const timeAdderResult = document.getElementsByClassName("sleepTime")
-//     display.innerHTML = adder(parseInt(timeAdder1.value + timeAdder2))
-//     timeAdderResult.value = ""
-
-//     display.className = "sleepTime"
-// }
+// healthVideo section
 
 const healthVideo = {
     healthPage: [
@@ -82,27 +68,28 @@ for (let link of healthVideo['healthPage']) {
 
 }
 
+// health blog section
 
 const blog = [
     {
         title: "AASM | Sleeping Education Blog",
-        content: "The American Academy of Sleep Medicine (AASM) launched the Sleep Education website in 2005. The site has reliable information about sleep, sleep disorders, & treatment options. It is a valuable resource for patients who have sleep disorders. The site provides accurate medical & scientific insight in a concise manner that is easy to understand. It also provides facts that will be useful to anyone who wants to learn more about sleep."
-        // link: "sleepeducation.org/blogs"
+        content: "The American Academy of Sleep Medicine (AASM) launched the Sleep Education website in 2005. The site has reliable information about sleep, sleep disorders, & treatment options. It is a valuable resource for patients who have sleep disorders. The site provides accurate medical & scientific insight in a concise manner that is easy to understand. It also provides facts that will be useful to anyone who wants to learn more about sleep.",
+        link: ["<a href=sleepeducation.org/blogs"]
     },
     {
         title: " Better Sleep Council Blog",
         content: "The Better Sleep Council (BSC) provides research, insights and educational resources to empower consumers to make smarter sleep decisions. If you are not sleeping on the latest industry news then explore the Better Sleep Council blog to learn about emerging trends, recent announcements, expert analysis, and more.",
-        // link: "bettersleep.org/blog"
+        link: ["<a href=bettersleep.org/blog"]
     },
     {
         title: "Little Z's Sleep Consulting Blog",
-        content: "Hey there! I'm Becca Campbell, your Pediatric Sleep Consultant and this is the Little Z's Sleep blog where I'm committed to resolving your child's exhausting sleep habits! The ultimate goal is to help families find wellness by creating a plan for their baby. We work together to implement a solution for all. Let's make sleep a thing!"
-        // link: "littlezsleep.com/blog"
+        content: "Hey there! I'm Becca Campbell, your Pediatric Sleep Consultant and this is the Little Z's Sleep blog where I'm committed to resolving your child's exhausting sleep habits! The ultimate goal is to help families find wellness by creating a plan for their baby. We work together to implement a solution for all. Let's make sleep a thing!",
+        link: ["<a href=littlezsleep.com/blog"]
     },
     {
         title: "The Sleep Consultant Blog",
-        content: "Riley Jarvis Sleep Consulting helps CEOs & top performers transform their sleep, increasing their productivity with the best-in-class individualized sleep training. Riley is an internationally renowned Sleep Consultant who has helped high functioning individuals achieve more out of their life & business using cutting edge sleeping strategies. Read his blog to learn the essentials of what you can do right now to start sleeping better tonight."
-        // link: "thesleepconsultant.com/blog"
+        content: "Riley Jarvis Sleep Consulting helps CEOs & top performers transform their sleep, increasing their productivity with the best-in-class individualized sleep training. Riley is an internationally renowned Sleep Consultant who has helped high functioning individuals achieve more out of their life & business using cutting edge sleeping strategies. Read his blog to learn the essentials of what you can do right now to start sleeping better tonight.",
+        link: ["<a href=thesleepconsultant.com/blog"]
     }
 ]
 
@@ -111,8 +98,30 @@ const health = document.getElementById("health")
 blog.forEach(blogs => {
     const list = document.createElement("div")
     list.innerHTML = `<h3>${blogs.title}</h3>`
-    list.innerHTML += `<p>${blogs.content}</p><button>More</button>`
+    list.innerHTML += `<p>${blogs.content}</p><button ${blogs.link}>More</button>`
 
     health.append(list)
 
 })
+
+const convert = document.getElementById("convert")
+const box = document.getElementById("box")
+
+
+
+function adder(number1, number2) {
+    return (number1 + number2)
+}
+
+
+convert.onclick = () => {
+
+    const display = document.getElementById("display")
+    const timeAdder1 = document.getElementById("number1")
+    const timeAdder2 = document.getElementById("number2")
+    const timeAdderResult = document.getElementsByClassName("sleepTime")
+    display.innerHTML = adder(parseInt(timeAdder1.value + timeAdder2.value))
+    timeAdderResult.value = ""
+
+    display.className = "sleepTime"
+}

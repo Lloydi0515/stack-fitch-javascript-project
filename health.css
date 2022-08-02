@@ -33,6 +33,7 @@ button {
     height: 40px;
     color: #F9C132;
     border: 2px solid #F9C132;
+    border-radius: 5px !important;
     background: none;
     font-size: 18px;
 }
@@ -65,4 +66,56 @@ h3 {
     ". . .";
     margin-left: 50px !important;
   }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #video {
+        display: grid; 
+        grid-auto-flow: column dense; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        ". ."
+        ". ."
+        ". ."; 
+    }
+    .container-fluid {
+        display: flex;
+        align-items: center;
+        margin-left: 200px !important;
+    }
+    .tips {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px;
+        margin-left: 280px !important;
+    }
+    
+}
+   
+
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    #video {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .container-fluid {
+        display: flex;
+        align-items: center;
+        margin-left: 120px !important;
+    }
+    .tips {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px;
+        margin-left: 180px !important;
+    }
+}
   
