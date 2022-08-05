@@ -22,7 +22,7 @@ img {
     align-items: center;
    
 }
-.sleepTime {
+/* .sleepTime {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,8 +30,30 @@ img {
     width: 25vw;
     border: 1px solid white;
     background-color: aqua;
+} */
+/* p {
+    color: white;
+    margin-top: 10px !important;
+}
+
+#display {
+    background-color: #fff;
+    width: 50px;
+} */
+
+.sleepTime {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 200px;
+    border: 5px solid rgb(63, 63, 63);
+    background-color: rgb(255, 255, 255);
+    font-size: large;
+    font-style: italic;
+    color: black;
 }
 p {
-    color: white;
+    color: rgb(255, 251, 251);
     margin-top: 10px !important;
 }

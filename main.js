@@ -104,24 +104,26 @@ blog.forEach(blogs => {
 
 })
 
-const convert = document.getElementById("convert")
-const box = document.getElementById("box")
+
+// function myFunction() {
+
+//     const timeAdder1 = parseInt(document.getElementById("number1").value)
+//     const timeAdder2 = parseInt(document.getElementById("number2").value)
+//     const res = timeAdder1 + timeAdder2
+//     console.log(res)
+//     document.getElementById("display").innerHTML = res
+
+// }
 
 
-
-function adder(number1, number2) {
-    return (number1 + number2)
-}
-
-
-convert.onclick = () => {
-
-    const display = document.getElementById("display")
-    const timeAdder1 = document.getElementById("number1")
-    const timeAdder2 = document.getElementById("number2")
-    const timeAdderResult = document.getElementsByClassName("sleepTime")
-    display.innerHTML = adder(parseInt(timeAdder1.value + timeAdder2.value))
-    timeAdderResult.value = ""
-
-    display.className = "sleepTime"
-}
+function adderFunction() {
+    var x = Number(document.getElementById("number1").value);
+    var y = Number(document.getElementById("number2").value);
+    document.getElementById("display").innerHTML = x + y;
+  }
+  
+  function clearFunction(){
+      document.getElementById("number1").value = "";
+      document.getElementById("number2").value = "";
+      document.getElementById("display").innerHTML = "";
+  }

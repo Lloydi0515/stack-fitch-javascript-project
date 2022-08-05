@@ -56,17 +56,34 @@
             <div>
               <img src="img/3d00860.jpg" class="img" alt="">
             </div>
-            <div>
+            <!-- <div>
                 <form>
                     <p>Present Sleep</p>
                     <input type="number" name="" id="number1">
                     <p>Previous Sleep</p>
                     <input type="number" name="" id="number2">
-                    <button type="button" id="convert" onclick="adder() ">Add</button>
+                    <button type="button" id="convert" onclick="myFunction() ">Add</button>
                 </form>
             </div>
-            <div id="box">
-                <div id="display"></div>
+            <div>
+                <div id="display">Total Sleep</div>
+            </div> -->
+            <div class="form">
+                
+                <p>Present Sleep</p>
+                <input type="number" name="" id="number1">
+                <p>Previous Sleep</p>
+                <input type="number" name="" id="number2">
+               
+            </div>
+
+            <div class="addButton">
+                <button id="addBtn" onclick="adderFunction()">Add</button>
+                <button id="clearBtn" onclick="clearFunction()">Clear</button>
+            </div> 
+
+            <div class="sleepTime">
+                <h1 id="display"></h1>
             </div>
         </div>
     </div>

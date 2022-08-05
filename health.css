@@ -67,6 +67,8 @@ h3 {
     margin-left: 50px !important;
   }
 
+  /* Responsive section */
+
   @media (min-width: 768px) and (max-width: 1023px) {
     #video {
         display: grid; 
@@ -94,9 +96,8 @@ h3 {
     
 }
    
-
-
 /** For mobile devices **/
+
 @media (max-width: 767px) {
     #video {
         display: flex;
